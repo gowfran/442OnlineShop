@@ -6,8 +6,10 @@
         <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
     </head>
     <body>
-        <h1>442 Online Shop</h1>
+        <p></p>
+        <img src="imagenes/logo.png"/>
         <br/>
+        <h1>442 Online Shop</h1>
         <a href="${pageContext.request.contextPath}/ServletControlador">
             Link al servlet controlador que despliega la vista #1
         </a>

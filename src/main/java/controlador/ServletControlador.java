@@ -20,7 +20,7 @@ public class ServletControlador extends HttpServlet{
         sesion.setAttribute("mensaje2", "¡Hola Mundo!");
         
         //4. redireccionar a la vista seleccionada
-        RequestDispatcher rd = request.getRequestDispatcher("vista/desplegarPantallaPrincipal.jsp");
+        RequestDispatcher rd = request.getRequestDispatcher("vista/ConsultarPedidos.jsp");
         rd.forward(request, response);
     }
     
