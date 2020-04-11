@@ -6,16 +6,14 @@
         <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
     </head>
     <body>
-        <p></p>
-        <img src="imagenes/logo.png"/>
+        <img src="img/logo.png"/>
         <br/>
-        <h1>442 Online Shop</h1>
+        <h1>SUPERMEX</h1>
         <a href="${pageContext.request.contextPath}/ServletControlador">
-            Link al servlet controlador que despliega la vista #1
+            Listado de productos
         </a>
             
             <script src="js/jquery-3.4.1.min"></script>
             <script src="js/bootstrap.min"></script>
     </body>
 </html>
-

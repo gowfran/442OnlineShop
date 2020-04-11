@@ -19,7 +19,7 @@ public class UsuarioJDBC {
     private static final String SQL_DELETE = "DELETE FROM USUARIO WHERE id_usuario=?";
     
     //Metodo para consultar registros haceindo uso de un ArrayList
-    public List<Usuario> select(){
+    public List<Usuario> select() throws ClassNotFoundException{
         //Creamos una conexion a la base de datos
         Connection conn = null;
         //Creamos un PreparedStatement para realizar los querys
@@ -74,7 +74,7 @@ public class UsuarioJDBC {
         
     }
     //Método para insertar un nuevo registro en la base de datos
-    public int insertar(Usuario usuario){
+    public int insertar(Usuario usuario) throws ClassNotFoundException{
         //Declaramos las variables para conexion y ejecución de querys
         Connection conn = null;
         PreparedStatement stmt = null;
@@ -106,7 +106,7 @@ public class UsuarioJDBC {
         return rows;
     }    
     //Método para actualizar un registro de la tabla usuario
-    public int actualizar(Usuario usuario){
+    public int actualizar(Usuario usuario) throws ClassNotFoundException{
         //Declaramos nuestras variables de conexion y ejecución de query
         Connection conn = null;
         PreparedStatement stmt = null;
@@ -136,7 +136,7 @@ public class UsuarioJDBC {
         return rows;
     }
     //Método para eliminar un registro de USUSARIO
-    public int eliminar(Usuario usuario){
+    public int eliminar(Usuario usuario) throws ClassNotFoundException{
         Connection conn = null;
         PreparedStatement stmt = null;
         int rows = 0;

@@ -7,11 +7,12 @@ public class Conexion {
     a la base de datos.
     Se declaran los metodos Close(); para cerrar las conexiones de tipo preparedStatement, Connection y ResultSet
     */
-    private static final String JDBC_URL = "jdbc:mysql://localhost/test?useSSL=false&serverTimezone=UTC";
+    private static final String JDBC_URL = "jdbc:mysql://localhost/fsegovia_ecommerce?useSSL=false&serverTimezone=UTC";
     private static final String JDBC_USER = "root";
     private static final String JDBC_PASS = "admin";
     
-    public static Connection getConnection() throws SQLException{
+    public static Connection getConnection() throws SQLException, ClassNotFoundException{
+        Class.forName("com.mysql.cj.jdbc.Driver");
         return DriverManager.getConnection(JDBC_URL, JDBC_USER, JDBC_PASS);
         
     }

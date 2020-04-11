@@ -6,9 +6,14 @@
         <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
     </head>
     <body>
-        <h1>Formulario para proveedores</h1>
-        <img src="imagenes/proveedores.jpg"/>
-        <button>Registrarse</button>
+        <h1>Muestra de variables en Vista #1</h1>
+        Variable en alcance request: ${mensaje}
+        <br/>
+        <br/>
+        Variable en alcance sesion: ${mensaje2}
+        <br/>
+        <br/>
+        <button>Hola</button>
         <br/>
         <br/>
         <a href="${pageContext.request.contextPath}/index.jsp">Pagina Principal</a>

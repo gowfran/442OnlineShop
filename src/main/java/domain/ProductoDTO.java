@@ -1,38 +1,117 @@
 package domain;
 public class ProductoDTO {
-    private int id_producto;
-    private String nombre_producto;
-    private String precio_producto;
+    private int idProducto;
+    private String nombreProducto;
+    private String precioProducto;
+    
+    //Nuevos atributos
+    private String stockid;
+    private String categoria;
+    private String familia;
+    private String subFamilia;
+    private String Articulo;
+    private String units;
+    private double precio;
 
-    public int getId_producto() {
-        return id_producto;
+    public ProductoDTO() {
     }
 
-    public void setId_producto(int id_producto) {
-        this.id_producto = id_producto;
+    public ProductoDTO(int idProducto, String nombreProducto, String precioProducto) {
+        this.idProducto = idProducto;
+        this.nombreProducto = nombreProducto;
+        this.precioProducto = precioProducto;
     }
 
-    public String getNombre_producto() {
-        return nombre_producto;
+    public int getIdProducto() {
+        return idProducto;
     }
 
-    public void setNombre_producto(String nombre_producto) {
-        this.nombre_producto = nombre_producto;
+    public void setIdProducto(int idProducto) {
+        this.idProducto = idProducto;
     }
 
-    public String getPrecio_producto() {
-        return precio_producto;
+    public String getNombreProducto() {
+        return nombreProducto;
     }
 
-    public void setPrecio_producto(String precio_producto) {
-        this.precio_producto = precio_producto;
+    public void setNombreProducto(String nombreProducto) {
+        this.nombreProducto = nombreProducto;
     }
 
+    public String getPrecioProducto() {
+        return precioProducto;
+    }
+
+    public void setPrecioProducto(String precioProducto) {
+        this.precioProducto = precioProducto;
+    }
+
+
+    public String getStockid() {
+        return stockid;
+    }
+
+    public void setStockid(String stockid) {
+        this.stockid = stockid;
+    }
+
+    public String getCategoria() {
+        return categoria;
+    }
+
+    public void setCategoria(String categoria) {
+        this.categoria = categoria;
+    }
+
+    public String getFamilia() {
+        return familia;
+    }
+
+    public void setFamilia(String familia) {
+        this.familia = familia;
+    }
+
+    public String getSubFamilia() {
+        return subFamilia;
+    }
+
+    public void setSubFamilia(String subFamilia) {
+        this.subFamilia = subFamilia;
+    }
+
+    public String getArticulo() {
+        return Articulo;
+    }
+
+    public void setArticulo(String Articulo) {
+        this.Articulo = Articulo;
+    }
+
+    public String getUnits() {
+        return units;
+    }
+
+    public void setUnits(String units) {
+        this.units = units;
+    }
+
+    public double getPrecio() {
+        return precio;
+    }
+
+    public void setPrecio(double precio) {
+        this.precio = precio;
+    }
 
     @Override
     public String toString() {
-        return "Objeto Persona{" + "id_persona=" + id_producto + ", nombre=" + nombre_producto + ", apellido=" + precio_producto +'}';
+        return "ProductoDTO{" + "stockid=" + stockid + ", categoria=" + categoria + ", familia=" + familia + ", subFamilia=" + subFamilia + ", Articulo=" + Articulo + ", units=" + units + ", precio=" + precio + '}';
     }
+    
+    
+
+
+
     
      
     

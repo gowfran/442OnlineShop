@@ -5,7 +5,7 @@ import domain.Usuario;
 import java.util.List;
 
 public class ManejoUsuarios {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws ClassNotFoundException {
         //Creamos un objeto de la clase UsuarioJDBC para poder haccer uso de
         //sus métodos
         UsuarioJDBC usuarioJDBC = new UsuarioJDBC();

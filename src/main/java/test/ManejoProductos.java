@@ -11,7 +11,7 @@ public class ManejoProductos {
         List<ProductoDTO> productos = productoDao.select();
         
         for(ProductoDTO producto : productos){
-            System.out.println("producto: " + producto);
+            System.out.println("productos: " + producto);
         }
         
         //Prueba insert

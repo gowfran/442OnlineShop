@@ -1,0 +1,19 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 9 abr 2020, 8:19:49
+    Author     : DELL
+
+.margAll{
+    margin-top: 100px;
+}
+.xy{
+    background-color: blueviolet; position: fixed; top: 0; left: 0; width: 100%;
+}
+*/
+list-inline-item{
+    color: #000;
+}
