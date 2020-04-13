@@ -1,4 +1,8 @@
 <%@taglib  prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+<!--Libreria para dar formato, signo de moneda dependiendo de la región-->
+<%@taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt"%>
+<!--Indicamos la región para México-->
+<fmt:setLocale value="es_MX"/>
 
 <section id="productos">
     <div class="container">
@@ -8,7 +12,7 @@
                     <div class="card-header">
                         <h4>Listado de Productos</h4>
                     </div>
-                    <table calss="table table-striped">
+                    <table class="table table-striped">
                         <thead class="thead-dark">
                             <tr>
                                 <th>#</th>
@@ -30,7 +34,7 @@
                                     <td>${producto.subFamilia}</td>
                                     <td>${producto.articulo}</td>
                                     <td>${producto.units}</td>
-                                    <td>${producto.precio}</td>
+                                    <td><fmt:formatNumber value="${producto.precio}" type="currency"/></td>
                                 </tr>
                             </c:forEach>
                         </tbody>
